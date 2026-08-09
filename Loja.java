@@ -59,7 +59,7 @@ public class Loja {
             return;
         }
 
-        System.out.println("\n===== PAGAMENTOS =====");
+        System.out.println("\n===== PAGAMENTOS CADASTRADOS =====");
 
         for (Pagamento pagamento : pagamentos) {
             pagamento.mostrarPagamento();
