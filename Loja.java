@@ -1,4 +1,4 @@
-package pdv;
+package sistemapdv;
 
 import java.util.ArrayList;
 
@@ -63,6 +63,21 @@ public class Loja {
 
         for (Pagamento pagamento : pagamentos) {
             pagamento.mostrarPagamento();
+            System.out.println();
+        }
+    }
+    
+        public void somarPagamentos() {
+
+        if (pagamentos.isEmpty()) {
+            System.out.println("\nNenhum pagamento registrado.");
+            return;
+        }
+
+        System.out.println("\n===== PAGAMENTOS CADASTRADOS =====");
+
+        for (Pagamento pagamento : pagamentos) {
+            soma = soma + pagamento;
             System.out.println();
         }
     }

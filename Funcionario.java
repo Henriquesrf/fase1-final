@@ -1,13 +1,20 @@
-package pdv;
+package sistemapdv;
 
 public abstract class Funcionario {
 
-    private int id;
-    private String nome;
-    private String CPF;
-    private float salario;
-    private String cargo;
+    protected int id;
+    protected String nome;
+    protected String CPF;
+    protected float salario;
+    protected String cargo;
 
+    public Funcionario(int id, String nome, String CPF, float salario, String cargo) {
+        this.id = id;
+        this.nome = nome;
+        this.CPF = CPF;
+        this.salario = salario;
+        this.cargo = cargo;
+    }
     public void mostrarDados() {
         System.out.println("Id: " + id);
         System.out.println("Nome: " + nome);

@@ -1,12 +1,16 @@
-package pdv;
+package sistemapdv;
 
 public class Gerente extends Funcionario {
 
     private String setor;
     private float bonus;
+    private int senha;
 
-    public Gerente() {
-        setCargo("Gerente");
+
+    public Gerente(int id, String nome, String cpf, float salario, String setor, float bonus, int senha) {
+        super(id, nome, cpf, salario, "Gerente");
+        this.bonus = bonus;
+        this.setor = setor;
     }
 
     public String getSetor() {
@@ -24,7 +28,10 @@ public class Gerente extends Funcionario {
     public void setBonus(float bonus) {
         this.bonus = bonus;
     }
+    
 
+    
+    
     @Override
     public void mostrarDados() {
         System.out.println("\n===== DADOS DO GERENTE =====");

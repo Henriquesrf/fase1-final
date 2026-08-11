@@ -1,4 +1,4 @@
-package pdv;
+package sistemapdv;
 
 public class Debito extends Cartao {
 

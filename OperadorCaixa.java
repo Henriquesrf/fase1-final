@@ -1,14 +1,18 @@
-package pdv;
+package sistemapdv;
 
 public class OperadorCaixa extends Funcionario {
 
     private int numeroCaixa;
     private String status;
+    private int senha;
 
-    public OperadorCaixa() {
-        setCargo("Operador de Caixa");
-        status = "FECHADO";
+    public OperadorCaixa(int numeroCaixa, String status, int id, String nome, String CPF, float salario, String cargo, int senha) {
+        super(id, nome, CPF, salario, cargo);
+        this.numeroCaixa = numeroCaixa;
+        this.status = status;
     }
+
+
 
     public int getNumeroCaixa() {
         return numeroCaixa;

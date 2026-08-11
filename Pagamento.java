@@ -1,4 +1,4 @@
-package pdv;
+package sistemapdv;
 
 public abstract class Pagamento {
 
